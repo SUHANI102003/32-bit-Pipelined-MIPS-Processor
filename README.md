@@ -74,12 +74,7 @@ The instruction execution cycle contains the following 5 stages in order:
 ## ▫️ Pipelined DataPath  
 ![pipelined](https://user-images.githubusercontent.com/68592620/231771102-12c05fa9-6e74-4835-abc6-1bd9b20e8453.png)  
 
-## ▫️ Example Program Testbench Code  
-Steps:  
-1. Initialize register R1 with 10.  
-2. Initialize register R2 with 20.  
-3. Initialize register R3 with 25.  
-4. Add the three numbers and store the sum in R5. 
+## ▫️ Example Test 1   
  
 Instructions :  
 | Assembly Instruction  | Machine Code | Hexcode |  
@@ -96,16 +91,60 @@ Instructions :
 
 
 Waveform :  
-![waveform](https://user-images.githubusercontent.com/68592620/231780893-8d26f3ff-9b60-44a5-93a7-c40f17219e6e.png)  
+
+![Screenshot 2025-05-04 191947.png](<https://media-hosting.imagekit.io/3164ce249b934a23/Screenshot 2025-05-04 191947.png?Expires=1840977634&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=V2ATnnO-mqemxuztCtbx5-UZimxA2YWd~MUskf65vWxlyB6Iv7U5CTotdoPK60HDdRRWs8Ggg2qWfvB-Agyzv~~Kmxbe8m58wRmpYIpxT0PY0cX83jMvmCIxGFDz5e5JqRu6Fa59CmY~ZemqgXQ4CoJ0KUAWMHuYHp3q~nUEPHqXbvZozeIamRrRvHi3DKSWQNwrrGNrOLG-S8HCJFAoIxFgOi0TWsiDKBKsla7-87MpHwUafN~WyAOD5NavL7MOYP4Gy783DgJUA5JgwHJrZxoiF9~sNIDSrYMLqYJgqpbYoxlFZ~K29Gslk-Y~lJV8UEP4ncuFVATB18CYdMUKBg__>)
 
 Console output :  
-``` R0 -  0
-R1 - 10
-R2 - 20
-R3 - 25
-R4 - 30
-R5 - 55  
-```  
+
+![Screenshot 2025-05-04 191633.png](<https://media-hosting.imagekit.io/2dcddde7ccd742d4/Screenshot 2025-05-04 191633.png?Expires=1840977885&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRQ9h8vnFoUnZ~w7lgQ~BEUhGeAtIzZ6tCuRnT-A8N6rOH0DD8QhKAfAyFHwoNEplbPOLZhQkcsCgA6SDv3E4T9mofdTYmULWVyG09~rlIm8ghtgpOfW4C2QHCN3IUe2iQbO-OGzqun7bWCyqB1aD~xV2G-bSO0pEjKE15mJbiafPz1tXjCNquTlQMOFFIuw7Lv2adTRVpvmiFrTE5qh34xOSh4pR44mLc~mDFD6iHDkP3qnTHQ-iJtuAVsY1TCI1TsT1EaIKBpCTJboymcIoHMVPOgQKVrde~1mq95KxC2xFflPNnmoiEry8~iJxxf7sYUPcsyEGVs7MaMPhea5WA__>)
+
+## ▫️ Example Test 2
+
+Instructions :  
+| Assembly Instruction  | Machine Code | Hexcode |  
+| ------------- | ------------- | ------------- |  
+| ADDI R1,R0,10  | 001010 00000 00001 0000000000001010  | 2801000a  |  
+| ADDI R2,R0,20 | 001010 00000 00010 0000000000010100  | 28020014  |  
+| ADDI R3,R0,25 | 001010 00000 00011 0000000000011001  | 28030019  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800  |  
+| ADD R4,R1,R2 | 000000 00001 00010 00100 00000 000000  | 00222000  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800 |  
+| ADD R5,R4,R3 | 000000 00100 00011 00101 00000 000000  | 00832800  |  
+| HLT | 111111 00000 00000 00000 00000 000000  | fc000000  |  
+
+Waveform:
+
+![Screenshot 2025-05-04 191947.png](<https://media-hosting.imagekit.io/3164ce249b934a23/Screenshot%202025-05-04%20191947.png?Expires=1840977634&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=V2ATnnO-mqemxuztCtbx5-UZimxA2YWd~MUskf65vWxlyB6Iv7U5CTotdoPK60HDdRRWs8Ggg2qWfvB-Agyzv~~Kmxbe8m58wRmpYIpxT0PY0cX83jMvmCIxGFDz5e5JqRu6Fa59CmY~ZemqgXQ4CoJ0KUAWMHuYHp3q~nUEPHqXbvZozeIamRrRvHi3DKSWQNwrrGNrOLG-S8HCJFAoIxFgOi0TWsiDKBKsla7-87MpHwUafN~WyAOD5NavL7MOYP4Gy783DgJUA5JgwHJrZxoiF9~sNIDSrYMLqYJgqpbYoxlFZ~K29Gslk-Y~lJV8UEP4ncuFVATB18CYdMUKBg__>)
+
+Console Output:
+
+![Screenshot 2025-05-04 191633.png](<https://media-hosting.imagekit.io/2dcddde7ccd742d4/Screenshot%202025-05-04%20191633.png?Expires=1840977885&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRQ9h8vnFoUnZ~w7lgQ~BEUhGeAtIzZ6tCuRnT-A8N6rOH0DD8QhKAfAyFHwoNEplbPOLZhQkcsCgA6SDv3E4T9mofdTYmULWVyG09~rlIm8ghtgpOfW4C2QHCN3IUe2iQbO-OGzqun7bWCyqB1aD~xV2G-bSO0pEjKE15mJbiafPz1tXjCNquTlQMOFFIuw7Lv2adTRVpvmiFrTE5qh34xOSh4pR44mLc~mDFD6iHDkP3qnTHQ-iJtuAVsY1TCI1TsT1EaIKBpCTJboymcIoHMVPOgQKVrde~1mq95KxC2xFflPNnmoiEry8~iJxxf7sYUPcsyEGVs7MaMPhea5WA__>)
+
+
+## ▫️ Example Test 3
+
+Instructions :  
+| Assembly Instruction  | Machine Code | Hexcode |  
+| ------------- | ------------- | ------------- |  
+| ADDI R1,R0,10  | 001010 00000 00001 0000000000001010  | 2801000a  |  
+| ADDI R2,R0,20 | 001010 00000 00010 0000000000010100  | 28020014  |  
+| ADDI R3,R0,25 | 001010 00000 00011 0000000000011001  | 28030019  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800  |  
+| ADD R4,R1,R2 | 000000 00001 00010 00100 00000 000000  | 00222000  |  
+| OR R7,R7,R7 (dummy)| 001010 00000 00011 0000000000011001  | 0ce77800 |  
+| ADD R5,R4,R3 | 000000 00100 00011 00101 00000 000000  | 00832800  |  
+| HLT | 111111 00000 00000 00000 00000 000000  | fc000000  |  
+
+Waveform:
+
+![Screenshot 2025-05-04 191947.png](<https://media-hosting.imagekit.io/3164ce249b934a23/Screenshot%202025-05-04%20191947.png?Expires=1840977634&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=V2ATnnO-mqemxuztCtbx5-UZimxA2YWd~MUskf65vWxlyB6Iv7U5CTotdoPK60HDdRRWs8Ggg2qWfvB-Agyzv~~Kmxbe8m58wRmpYIpxT0PY0cX83jMvmCIxGFDz5e5JqRu6Fa59CmY~ZemqgXQ4CoJ0KUAWMHuYHp3q~nUEPHqXbvZozeIamRrRvHi3DKSWQNwrrGNrOLG-S8HCJFAoIxFgOi0TWsiDKBKsla7-87MpHwUafN~WyAOD5NavL7MOYP4Gy783DgJUA5JgwHJrZxoiF9~sNIDSrYMLqYJgqpbYoxlFZ~K29Gslk-Y~lJV8UEP4ncuFVATB18CYdMUKBg__>)
+
+Console Output:
+
+![Screenshot 2025-05-04 191633.png](<https://media-hosting.imagekit.io/2dcddde7ccd742d4/Screenshot%202025-05-04%20191633.png?Expires=1840977885&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRQ9h8vnFoUnZ~w7lgQ~BEUhGeAtIzZ6tCuRnT-A8N6rOH0DD8QhKAfAyFHwoNEplbPOLZhQkcsCgA6SDv3E4T9mofdTYmULWVyG09~rlIm8ghtgpOfW4C2QHCN3IUe2iQbO-OGzqun7bWCyqB1aD~xV2G-bSO0pEjKE15mJbiafPz1tXjCNquTlQMOFFIuw7Lv2adTRVpvmiFrTE5qh34xOSh4pR44mLc~mDFD6iHDkP3qnTHQ-iJtuAVsY1TCI1TsT1EaIKBpCTJboymcIoHMVPOgQKVrde~1mq95KxC2xFflPNnmoiEry8~iJxxf7sYUPcsyEGVs7MaMPhea5WA__>)
+
 
 ## ▫️ Known problems and issues  
 Following pipelining hazards are present in the given design :  
