@@ -148,7 +148,7 @@ Instructions :
 
 Waveform:
 
-![]()
+![](https://github.com/SUHANI102003/32-bit-Pipelined-MIPS-Processor/blob/main/sim_logs/test3.png)
 
 Console Output:
 
