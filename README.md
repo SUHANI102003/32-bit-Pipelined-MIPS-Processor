@@ -92,11 +92,11 @@ Instructions :
 
 Waveform :  
 
-![Screenshot 2025-05-04 191947.png](<https://media-hosting.imagekit.io/3164ce249b934a23/Screenshot 2025-05-04 191947.png?Expires=1840977634&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=V2ATnnO-mqemxuztCtbx5-UZimxA2YWd~MUskf65vWxlyB6Iv7U5CTotdoPK60HDdRRWs8Ggg2qWfvB-Agyzv~~Kmxbe8m58wRmpYIpxT0PY0cX83jMvmCIxGFDz5e5JqRu6Fa59CmY~ZemqgXQ4CoJ0KUAWMHuYHp3q~nUEPHqXbvZozeIamRrRvHi3DKSWQNwrrGNrOLG-S8HCJFAoIxFgOi0TWsiDKBKsla7-87MpHwUafN~WyAOD5NavL7MOYP4Gy783DgJUA5JgwHJrZxoiF9~sNIDSrYMLqYJgqpbYoxlFZ~K29Gslk-Y~lJV8UEP4ncuFVATB18CYdMUKBg__>)
+![](https://github.com/SUHANI102003/32-bit-Pipelined-MIPS-Processor/blob/main/sim_logs/test1%20(2).png)
 
 Console output :  
 
-![Screenshot 2025-05-04 191633.png](<https://media-hosting.imagekit.io/2dcddde7ccd742d4/Screenshot 2025-05-04 191633.png?Expires=1840977885&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRQ9h8vnFoUnZ~w7lgQ~BEUhGeAtIzZ6tCuRnT-A8N6rOH0DD8QhKAfAyFHwoNEplbPOLZhQkcsCgA6SDv3E4T9mofdTYmULWVyG09~rlIm8ghtgpOfW4C2QHCN3IUe2iQbO-OGzqun7bWCyqB1aD~xV2G-bSO0pEjKE15mJbiafPz1tXjCNquTlQMOFFIuw7Lv2adTRVpvmiFrTE5qh34xOSh4pR44mLc~mDFD6iHDkP3qnTHQ-iJtuAVsY1TCI1TsT1EaIKBpCTJboymcIoHMVPOgQKVrde~1mq95KxC2xFflPNnmoiEry8~iJxxf7sYUPcsyEGVs7MaMPhea5WA__>)
+![](https://github.com/SUHANI102003/32-bit-Pipelined-MIPS-Processor/blob/main/sim_logs/test1%20(1).png)
 
 ## ▫️ Example Test 2
 
