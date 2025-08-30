@@ -128,7 +128,7 @@ Waveform:
 
 Console Output:
 
-![Screenshot 2025-05-04 191633.png](<https://media-hosting.imagekit.io/2dcddde7ccd742d4/Screenshot%202025-05-04%20191633.png?Expires=1840977885&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRQ9h8vnFoUnZ~w7lgQ~BEUhGeAtIzZ6tCuRnT-A8N6rOH0DD8QhKAfAyFHwoNEplbPOLZhQkcsCgA6SDv3E4T9mofdTYmULWVyG09~rlIm8ghtgpOfW4C2QHCN3IUe2iQbO-OGzqun7bWCyqB1aD~xV2G-bSO0pEjKE15mJbiafPz1tXjCNquTlQMOFFIuw7Lv2adTRVpvmiFrTE5qh34xOSh4pR44mLc~mDFD6iHDkP3qnTHQ-iJtuAVsY1TCI1TsT1EaIKBpCTJboymcIoHMVPOgQKVrde~1mq95KxC2xFflPNnmoiEry8~iJxxf7sYUPcsyEGVs7MaMPhea5WA__>)
+![](https://github.com/SUHANI102003/32-bit-Pipelined-MIPS-Processor/blob/main/sim_logs/test2.png)
 
 
 ## ▫️ Example Test 3
