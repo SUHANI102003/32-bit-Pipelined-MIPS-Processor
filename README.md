@@ -1,8 +1,16 @@
-# Implementation-of-32-bit-Pipelined-MIPS-Processor
+<div align="center">
 
-This repository contains the details and the code for the MIPS32 ISA based RISC 5 stage pipelined Processor along with 3 test test programs in assembly language to verify the functionality of pipeline processor.  
-Mips has simple and fewer number of instructions and addressing modes and large number of registers making it easier to implement.
+# 🚀 Implementation-of-32-bit-Pipelined-MIPS-Processor  
 
+![MIPS](https://img.shields.io/badge/ISA-MIPS32-blue?style=flat-square) 
+![Pipeline](https://img.shields.io/badge/Architecture-5%20Stage%20Pipeline-green?style=flat-square) 
+![Verilog](https://img.shields.io/badge/HDL-Verilog-orange?style=flat-square) 
+![Status](https://img.shields.io/badge/Status-Working-brightgreen?style=flat-square)  
+
+</div>
+
+This repository contains the details and the code for the **MIPS32 ISA based RISC 5-stage pipelined Processor** along with 3 test programs in assembly language to verify the functionality of pipeline processor.  
+✨ MIPS has simple and fewer number of instructions and addressing modes, and a large number of registers making it easier to implement.  
 
 ## ▫️ MIPS32  
 - 32 x 32 bit GPRs [R0 to R31]  
