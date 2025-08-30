@@ -1,6 +1,6 @@
 # Implementation-of-32-bit-Pipelined-MIPS-Processor
 
-This repository contains the details and the code for the MIPS32 ISA based RISC Processor, which is implemented in 5 stage pipelined configuration.  
+This repository contains the details and the code for the MIPS32 ISA based RISC 5 stage pipelined Processor along with 3 test test programs in assembly language to verify the functionality of pipeline processor.  
 
 ## ▫️ MIPS32  
 - 32 x 32 bit GPRs [R0 to R31]  
